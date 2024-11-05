@@ -1,4 +1,34 @@
 
+document.addEventListener('DOMContentLoaded', () => {
+    new Typed('#typed-name', {
+        strings: ['Foysal Hossain <span class="text-orange-300">Munna</span>'],
+        typeSpeed: 100,    // Speed of typing
+        backSpeed: 50,     // Speed of backspacing
+        startDelay: 700,   // Delay before typing starts
+        backDelay: 1500,   // Delay before backspacing starts
+        loop: false  ,
+        showCursor: false      
+    });
+});
+
+
+
+// for django developer 
+
+
+new Typed('#typed-title', {
+    strings: ['Django Developer..', 'Backend Developer..', 'Web Developer..'],
+    typeSpeed: 100,     // Speed of typing
+    backSpeed: 50,      // Speed of backspacing
+    startDelay: 1000,   // Delay before typing starts
+    backDelay: 1500,    // Delay before backspacing starts
+    loop: true,         // Enable looping for continuous cycling
+    showCursor: true   // Disable the blinking cursor
+});
+
+
+
+
 
 
 document.getElementById("resumeButton").addEventListener("click", function() {
@@ -87,29 +117,3 @@ document.getElementById("submitButton").addEventListener("click", async (e) => {
 
 // for typing animation 
 
-    document.addEventListener('DOMContentLoaded', () => {
-        new Typed('#typed-name', {
-            strings: ['Foysal Hossain <span class="text-orange-300">Munna</span>'],
-            typeSpeed: 100,    // Speed of typing
-            backSpeed: 50,     // Speed of backspacing
-            startDelay: 700,   // Delay before typing starts
-            backDelay: 1500,   // Delay before backspacing starts
-            loop: false  ,
-            showCursor: false      
-        });
-    });
-
-
-
-    // for django developer 
-
-
-    new Typed('#typed-title', {
-        strings: ['Django Developer..', 'Backend Developer..', 'Web Developer..'],
-        typeSpeed: 100,     // Speed of typing
-        backSpeed: 50,      // Speed of backspacing
-        startDelay: 1000,   // Delay before typing starts
-        backDelay: 1500,    // Delay before backspacing starts
-        loop: true,         // Enable looping for continuous cycling
-        showCursor: true   // Disable the blinking cursor
-    });

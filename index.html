@@ -1,43 +1,49 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar</title>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- AOS Animation (optional, only if you're using AOS) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- lobster font  -->
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 
 </head>
 
 
 <style>
-
-
-.lobster-regular {
-  font-family: "Lobster", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+    .lobster-regular {
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 </style>
-<body class="bg-[#1c1b22] font-Dosis  text-white overflow-x-hidden">
+
+<body class="bg-black font-Dosis  text-white overflow-x-hidden">
     <!-- Header -->
     <header>
+
+
+
         <!-- Navbar section -->
-
-
-          <!-- Navbar section -->
-          <nav class="bg-[#24222c] bg-opacity-60 backdrop-blur-lg border-gray-200 dark:bg-[#24222c] fixed top-0 w-full z-20">
+        <nav class=" backdrop-blur-lg border-gray-200 fixed top-0 w-full z-20">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span class="lobster-regular self-center text-2xl whitespace-nowrap dark:text-white">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="lobster-regular self-center text-2xl whitespace-nowrap text-white">
                         f o <span class="text-[#13faa9]">y</span> s a l <span class="text-4xl text-[#13faa9]">.</span>
                     </span>
                 </a>
@@ -53,7 +59,8 @@
                         id="user-dropdown">
                         <div class="px-4 py-3">
                             <span class="block text-sm text-gray-900 dark:text-white">Foysal Hossain</span>
-                            <span class="block text-sm text-gray-500 truncate dark:text-gray-400">foysal.cse11@gmail.com</span>
+                            <span
+                                class="block text-sm text-gray-500 truncate dark:text-gray-400">foysal.cse11@gmail.com</span>
                         </div>
                     </div>
                     <button data-collapse-toggle="navbar-user" type="button"
@@ -69,9 +76,9 @@
                 </div>
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
                     <ul
-                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#24222c] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-[#24222c] md:dark:bg-[#24222c] dark:border-gray-700">
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:border-gray-700">
                         <li>
-                            <a href="#"
+                            <a href="index.html"
                                 class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
                                 aria-current="page">Home</a>
                         </li>
@@ -92,16 +99,61 @@
     </header>
 
     <!-- Main Content -->
-    <main>
-        <section class="min-h-screen flex items-center justify-center">
-            <h1 class="text-4xl font-bold">Welcome to My Portfolio</h1>
+    <main class="bg-dark pt-8">
+
+        <section class="flex flex-col sm:flex-row items-center justify-around gap-8 p-10 overflow-x-hidden">
+            <div class="text-start max-w-full sm:max-w-1/2 lg:max-w-1/3 mr-20">
+                <p data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-sine"
+                    class="font-Dosis text-lg text-emerald-500">Software Developer.</p>
+                <p class="font-Dosis text-white text-3xl sm:text-4xl">Hey, I'm</p>
+                <p class="text-3xl sm:text-4xl lg:text-6xl font-Dosis  text-emerald-500 pt-5 pb-5">
+                    <span id="typed-name"></span>
+                </p>
+                <p data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine"
+                    class="text-2xl sm:text-3xl text-orange-300 font-Dosis pt-5">
+                    <span id="typed-title"></span>
+                </p>
+
+                <p class="pt-5 text-lg leading-relaxed">
+                    I excel at crafting elegant digital experiences and <br> I am proficient in various programming
+                    languages <br> and technologies.
+                </p>
+                <div class="pt-3 flex flex-col sm:flex-row sm:items-center sm:gap-4">
+                    <button id="resumeButton"
+                        class="w-full sm:w-auto p-2 bg-emerald-400 text-black rounded-2xl font-semibold flex items-center justify-center gap-2 hover:bg-emerald-100">
+                        Resume
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+                    </button>
+
+                    <div class="flex gap-4 mt-4 sm:mt-0">
+                        <a href="https://www.facebook.com/profile.php?id=100037662442075" target="_blank">
+                            <i class="fa-brands fa-facebook text-[#13faa9] text-2xl hover:text-white"
+                                title="Facebook link"></i>
+                        </a>
+                        <a href="https://github.com/foysal777" target="_blank">
+                            <i class="fa-brands fa-github text-[#13faa9] text-2xl hover:text-white"
+                                title="GitHub link"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/foysalhossain707/" target="_blank">
+                            <i class="fa-brands fa-linkedin text-[#13faa9] text-2xl hover:text-white"
+                                title="LinkedIn link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- img section  -->
+            <div data-aos="zoom-in-up" data-aos-duration="1200" class="mt-8 sm:mt-0 flex justify-center">
+                <img class="w-64 sm:w-72 lg:w-80 shadow-xl rounded-2xl" src="images/blazzers_img_1.png" alt="">
+            </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-[#24222c] p-4 text-center">
-        <p>&copy; 2024 Foysal Hossain. All rights reserved.</p>
-    </footer>
+
 
     <!-- AOS Animation Script (optional, only if you're using AOS) -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -110,6 +162,8 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
