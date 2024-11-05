@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation (optional, only if you're using AOS) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- lobster font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<style>
+
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+</style>
+<body class="bg-[#1c1b22] font-Dosis  text-white overflow-x-hidden">
+    <!-- Header -->
+    <header>
+        <!-- Navbar section -->
+
+
+          <!-- Navbar section -->
+          <nav class="bg-[#24222c] bg-opacity-60 backdrop-blur-lg border-gray-200 dark:bg-[#24222c] fixed top-0 w-full z-20">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="lobster-regular self-center text-2xl whitespace-nowrap dark:text-white">
+                        f o <span class="text-[#13faa9]">y</span> s a l <span class="text-4xl text-[#13faa9]">.</span>
+                    </span>
+                </a>
+                <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button type="button"
+                        class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                        id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+                        data-dropdown-placement="bottom">
+                        <span class="sr-only">Open user menu</span>
+                        <img class="w-8 h-8 rounded-full" src="images/profile.jpg" alt="user photo">
+                    </button>
+                    <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+                        id="user-dropdown">
+                        <div class="px-4 py-3">
+                            <span class="block text-sm text-gray-900 dark:text-white">Foysal Hossain</span>
+                            <span class="block text-sm text-gray-500 truncate dark:text-gray-400">foysal.cse11@gmail.com</span>
+                        </div>
+                    </div>
+                    <button data-collapse-toggle="navbar-user" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-user" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+                    <ul
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#24222c] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-[#24222c] md:dark:bg-[#24222c] dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Project</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="min-h-screen flex items-center justify-center">
+            <h1 class="text-4xl font-bold">Welcome to My Portfolio</h1>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#24222c] p-4 text-center">
+        <p>&copy; 2024 Foysal Hossain. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS Animation Script (optional, only if you're using AOS) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
