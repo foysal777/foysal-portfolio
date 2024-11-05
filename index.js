@@ -71,32 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-const navLinks = document.querySelectorAll('.nav-link');
-
-// Function to remove active class from all links
-function removeActiveClass() {
-    navLinks.forEach(link => {
-        link.classList.remove('text-[#13faa9]', 'font-bold'); // Remove active styles
-    });
-}
-
-// Add click event to each nav link
-navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-        removeActiveClass(); // Remove active class from all
-        this.classList.add('text-[#13faa9]', 'font-bold'); // Add active class to the clicked link
-    });
-});
-
-// Optionally, set the active link based on the current URL
-const currentPath = window.location.pathname;
-navLinks.forEach(link => {
-    if (link.getAttribute('href') === currentPath) {
-        removeActiveClass();
-        link.classList.add('text-[#13faa9]', 'font-bold');
-    }
-});
-
 
 
 // for email sending 

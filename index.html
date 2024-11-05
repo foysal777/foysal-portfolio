@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <title>Foysal_Hossain's_Portfolio </title>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisi ui -->
@@ -44,8 +45,8 @@
 
 
     .unlock-regular {
-        font-family: "Unlock", serif;
-        font-weight: 400;
+        font-family: "Unlock", serif !important;
+        font-weight: 300;
         font-style: normal;
     }
 
@@ -56,6 +57,24 @@
 </style>
 
 <body class="bg-black   text-white overflow-x-hidden">
+
+
+
+ <!-- Loading  -->
+ <div id="loadingScreen">
+    <div class="flex flex-col items-center pt-28 ">
+        <img class="w-1/2" src="images/neon-01.gif" alt="Loading...">
+        <p class="text-green-500 text-4xl mt-4 font-thin"> <span class="text-yellow-400 text-2xl">
+            </span> <br>
+
+            <span class="font-bold"> Loading...</span>
+
+
+        </p>
+    </div>
+</div>
+
+
     <!-- Header -->
     <header>
 
@@ -105,12 +124,12 @@
                                 aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Project</a>
+                            <a href="project.html"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Project</a>
                         </li>
                         <li>
                             <a href="contact.html"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -128,7 +147,7 @@
                 <p data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-sine"
                     class="font-Dosis text-lg text-emerald-500">Software Developer.</p>
                 <p class="font-Dosis text-white text-3xl sm:text-4xl">Hey, I'm</p>
-                <p class="text-3xl sm:text-4xl lg:text-6xl font-roboto text-emerald-500 pt-5 pb-5">
+                <p class="text-xl sm:text-4xl lg:text-6xl unlock-regular text-emerald-500 pt-5 pb-5">
                     <span id="typed-name"></span>
                 </p>
                 <p data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine"
@@ -355,7 +374,7 @@
 
 
 
-    <!-- Project section  -->
+
 
       <!-- Project section  -->
 
@@ -616,6 +635,12 @@
         </div>
     </footer>
 
+    <script>
+        window.addEventListener('load', function () {
+            const loadingScreen = document.getElementById('loadingScreen');
+            loadingScreen.style.display = 'none';
+        });
+    </script>
 
 
     <!-- AOS Animation Script (optional, only if you're using AOS) -->

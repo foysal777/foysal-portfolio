@@ -76,16 +76,16 @@
                         class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:border-gray-700">
                         <li>
                             <a href="index.html"
-                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-green-100"
                                 aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Project</a>
+                            <a href="project.html"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-green-500 md:dark:hover:text-blue-100 dark:hover:bg-gray-100 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Project</a>
                         </li>
                         <li>
                             <a href="contact.html"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-100 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -98,56 +98,76 @@
     </header>
 
     <!-- Main Content -->
-    <main class="pt-20">
+    <main >
         
-        <section class="text-center py-8 bg-green-500 text-white">
-            <h1 class="text-4xl font-bold font-Dosis">Cloth Store Project</h1>
-            <p class="text-lg mt-2">A showcase of the cloth store project with details</p>
-        </section>
-    
-        <!-- Project Overview Section -->
-        <section class="container mx-auto px-4 py-12">
-            <div class="flex flex-col lg:flex-row items-center gap-8">
-                <img src="images/p1.png" alt="Project Screenshot" class="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full lg:w-1/2">
-                <div class="lg:w-1/2">
-                    <h2 class="text-3xl font-semibold text-green-600">Project Overview</h2>
-                    <p class="mt-4 text-lg text-gray-200">
-                        This cloth store Project showcases an intuitive, user-friendly interface for customers to explore car services, view menus, and make payment. Built with a modern, responsive design, it adapts seamlessly across various devices.
-                    </p>
-                    <ul class="list-disc list-inside mt-4 text-gray-100">
-                        <li>Responsive design with mobile-first approach</li>
-                        <li>Interactive menu and reservation system</li>
-                        <li>Uses modern technologies for smooth user experience</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    
-   
-    
-        <!-- Technologies and Links Section -->
-        <section class="container mx-auto px-4 py-12 bg-[#1c1b22] rounded-lg shadow-md">
-            <h2 class="text-3xl font-semibold text-center text-green-600">Technologies Used</h2>
-            <div class="flex flex-wrap justify-center gap-4 mt-6">
-                <span class="px-4 py-2 bg-green-500 text-white rounded-full">HTML</span>
-                <span class="px-4 py-2 bg-green-500 text-white rounded-full">CSS</span>
-                <span class="px-4 py-2 bg-green-500 text-white rounded-full">JavaScript</span>
-                <span class="px-4 py-2 bg-green-500 text-white rounded-full">Tailwind CSS</span>
-                <span class="px-4 py-2 bg-green-500 text-white rounded-full">Django</span>
-                <span class="px-4 py-2 bg-green-500 text-white rounded-full">REST API</span>
+             <!-- Project section  -->
+
+             <section class="p-10 items-center mx-auto">
+                <h1 class="text-center font-Dosis text-[#13faa9] text-4xl p-10"><u>Recent Project</u></h1>
                 
-            </div>
-    
-            <!-- Project Links -->
-            <div class="flex justify-center gap-4 mt-8 rounded-lg">
-                <a href="https://foysal777.github.io/cloth-store-live-fronted/" target="_blank" class="btn btn-success px-6 py-3 hover:bg-green-100 hover:text-green-700 transition-all duration-300">
-                    Live Project
-                </a>
-                <a href="https://github.com/foysal777/cloth-store-live-fronted" target="_blank" class="btn btn-outline px-6 py-3 border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition-all duration-300">
-                    GitHub Repository
-                </a>
-            </div>
-        </section>
+                <div class="flex justify-center mb-10">
+                    <a href="./project.html" target="_blank"
+                        class="btn btn-outline text-center btn-success hover:bg-green-100 rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2">
+                        See All Project
+                    </a>
+                </div>
+            
+                <!-- Project Cards -->
+                <div class="p-10 mx-auto justify-center gap-x-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- First Card -->
+                    <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
+                        <a href="https://foysal777.github.io/car-reapir-fronted/" target="_blank" class="block">
+                            <!-- Card Wrapper -->
+                            <div class="card bg-base-100 border border-[#13faa9] rounded-lg shadow-md transition-all duration-300 hover:shadow-green-200 w-full">
+                                <figure>
+                                    <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110"
+                                        src="images/p-1.png" alt="Project Image" />
+                                </figure>
+                                <p class="text-xl font-Dosis text-center p-3">Car Repair Project</p>
+                            </div>
+                        </a>
+                        
+                        <!-- Buttons Section -->
+                        <div class="pt-4 flex gap-2 justify-between">
+                            <a href="https://github.com/foysal777/cloth-store-live-fronted" target="_blank"
+                                class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:bg-green-100">
+                                github link
+                            </a>
+                            <a href="./p_1_details.html" target="_blank"
+                                class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:bg-green-100">
+                                Details Project
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Second Card -->
+                    <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
+                        <a href="https://foysal777.github.io/cloth-store-live-fronted/" target="_blank" class="block">
+                            <!-- Card Wrapper -->
+                            <div class="card bg-base-100 border border-[#13faa9] rounded-lg shadow-md transition-all duration-300 hover:shadow-green-200 w-full">
+                                <figure>
+                                    <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110"
+                                        src="images/p1.png" alt="Project Image" />
+                                </figure>
+                                <p class="text-xl font-Dosis text-center p-3">Cloth Store Project</p>
+                            </div>
+                        </a>
+                        
+                        <!-- Buttons Section -->
+                        <div class="pt-4 flex gap-2 justify-between">
+                            <a href="https://github.com/foysal777/cloth-store-live-fronted" target="_blank"
+                                class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:bg-green-100">
+                                github link
+                            </a>
+                            <a href="./p_2_details.html" target="_blank"
+                                class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:bg-green-100">
+                                Details Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
 
     </main>
 
