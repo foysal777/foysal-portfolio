@@ -7,6 +7,15 @@
     <title>Responsive Navbar</title>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisi ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- speak font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Unlock&display=swap"
+        rel="stylesheet">
     <!-- font awsome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -31,9 +40,22 @@
         font-weight: 400;
         font-style: normal;
     }
+
+
+
+    .unlock-regular {
+        font-family: "Unlock", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+
+
+
 </style>
 
-<body class="bg-black font-Dosis  text-white overflow-x-hidden">
+<body class="bg-black   text-white overflow-x-hidden">
     <!-- Header -->
     <header>
 
@@ -79,7 +101,7 @@
                         class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:border-gray-700">
                         <li>
                             <a href="index.html"
-                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                                class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 md:dark:text-green-500"
                                 aria-current="page">Home</a>
                         </li>
                         <li>
@@ -106,7 +128,7 @@
                 <p data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-sine"
                     class="font-Dosis text-lg text-emerald-500">Software Developer.</p>
                 <p class="font-Dosis text-white text-3xl sm:text-4xl">Hey, I'm</p>
-                <p class="text-3xl sm:text-4xl lg:text-6xl font-Dosis  text-emerald-500 pt-5 pb-5">
+                <p class="text-3xl sm:text-4xl lg:text-6xl font-roboto text-emerald-500 pt-5 pb-5">
                     <span id="typed-name"></span>
                 </p>
                 <p data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine"
@@ -151,7 +173,448 @@
                 <img class="w-64 sm:w-72 lg:w-80 shadow-xl rounded-2xl" src="images/blazzers_img_1.png" alt="">
             </div>
         </section>
+
+        <!-- skill section  -->
+
+
+        <section class="p-10 overflow-x-hidden">
+            <h1 class="text-4xl text-[#13faa9] font-Dosis text-start p-10"> <u>Skills </u> </h1>
+
+
+            <div
+                class="w-fit items-center  mx-auto gap-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 ">
+
+                <!-- one card  -->
+                <div data-aos="fade-left" data-aos-duration="1000" class="mx-auto items-center">
+                    <div data-aos="fade-left" data-aos-duration="1000" class="mx-auto items-center">
+                        <div
+                            class="card w-36 h-36 p-2 border-2 border-green-600 hover:border-white bg-base-100 shadow-lg flex flex-col items-center justify-center space-y-1 transition duration-300 rounded-lg">
+                            <figure>
+                                <i
+                                    class="fa-brands fa-html5 text-6xl text-green-600 transform transition-transform duration-300 hover:scale-110 hover:text-gray-100"></i>
+                            </figure>
+                            <h1 class="text-sm font-bold text-center">HTML</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- two card  -->
+                <div data-aos="fade-left" data-aos-duration="1200" class="mx-auto items-center">
+                    <div
+                        class="card w-36 h-36 p-2 border-2 border-green-600 hover:border-white bg-base-100 shadow-lg flex flex-col items-center justify-center space-y-1 transition duration-300 rounded-lg">
+                        <figure>
+                            <i
+                                class="fa-brands fa-css3 text-6xl text-green-600 transform transition-transform duration-300 hover:scale-110 hover:text-gray-100"></i>
+                        </figure>
+                        <h1 class="text-sm font-bold text-center">CSS</h1>
+
+                    </div>
+
+                </div>
+
+                <!-- thrree card  -->
+                <div data-aos="fade-left" data-aos-duration="1400" class="mx-auto items-center">
+                    <div
+                        class="card w-36 h-36 p-2 border-2 border-green-600 hover:border-white bg-base-100 shadow-lg flex flex-col items-center justify-center space-y-1 transition duration-300 rounded-lg">
+                        <figure>
+                            <i
+                                class="fa-brands fa-python text-6xl text-green-600 transform transition-transform duration-300 hover:scale-110 hover:text-gray-100"></i>
+                        </figure>
+                        <h1 class="text-sm font-bold text-center">Python</h1>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Four card  -->
+                <div data-aos="fade-left" data-aos-duration="1600" class="mx-auto items-center">
+                    <div
+                        class="card w-36 h-36 p-2 border-2 border-green-600 hover:border-white bg-base-100 shadow-lg flex flex-col items-center justify-center space-y-1 transition duration-300 rounded-lg">
+                        <figure>
+                            <i
+                                class="fa-brands fa-js text-6xl text-green-600 transform transition-transform duration-300 hover:scale-110 hover:text-gray-100"></i>
+                        </figure>
+                        <h1 class="text-sm font-bold text-center">Javascript</h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Five card  -->
+                <div data-aos="fade-left" data-aos-duration="1800" class="mx-auto items-center">
+                    <div
+                        class="card w-36 h-36 p-2 border-2 border-green-600 hover:border-white bg-base-100 shadow-lg flex flex-col items-center justify-center space-y-1 transition duration-300 rounded-lg">
+                        <figure>
+                            <i
+                                class="fa-brands fa-react text-6xl text-green-600 transform transition-transform duration-300 hover:scale-110 hover:text-gray-100"></i>
+                        </figure>
+                        <h1 class="text-sm font-bold text-center">REACT</h1>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- six card  -->
+                <div data-aos="fade-left" data-aos-duration="2000" class="mx-auto items-center">
+                    <div
+                        class="card w-36 h-36 p-2 border-2 border-green-600 hover:border-white bg-base-100 shadow-lg flex flex-col items-center justify-center space-y-1 transition duration-300 rounded-lg">
+                        <figure>
+                            <i
+                                class="fa-brands fa-java text-6xl text-green-600 transform transition-transform duration-300 hover:scale-110 hover:text-gray-100"></i>
+                        </figure>
+                        <h1 class="text-sm font-bold text-center">JAVA</h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- seven card  -->
+
+
+                <!-- eight card  -->
+                <div data-aos="fade-right" data-aos-duration="2400" class="mx-auto items-center">
+                    <div
+                        class="card w-36 h-36 p-2 border-2 border-green-600 hover:border-white bg-base-100 shadow-lg flex flex-col items-center justify-center space-y-1 transition duration-300 rounded-lg">
+                        <figure>
+                            <i
+                                class="fa-brands fa-square-github text-6xl text-green-600 transform transition-transform duration-300 hover:scale-110 hover:text-gray-100"></i>
+                        </figure>
+                        <h1 class="text-sm font-bold text-center">Github</h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Nine card  -->
+                <div data-aos="fade-right" data-aos-duration="2600" class="mx-auto items-center">
+                    <div
+                        class="card w-36 h-36 p-2 border-2 border-green-600 hover:border-white bg-base-100 shadow-lg flex flex-col items-center justify-center space-y-1 transition duration-300 rounded-lg">
+                        <figure>
+                            <i
+                                class="fa-brands fa-figma text-6xl text-green-600 transform transition-transform duration-300 hover:scale-110 hover:text-gray-100"></i>
+                        </figure>
+                        <h1 class="text-sm font-bold text-center">Figma</h1>
+
+                    </div>
+
+                </div> <!-- ten card  -->
+                <div data-aos="fade-right" data-aos-duration="3000" class="mx-auto items-center">
+                    <div
+                        class="card w-36 h-36 p-2 border-2 border-green-600 hover:border-white bg-base-100 shadow-lg flex flex-col items-center justify-center space-y-1 transition duration-300 rounded-lg">
+                        <figure>
+                            <i
+                                class="fa-solid fa-c text-6xl text-green-600 transform transition-transform duration-300 hover:scale-110 hover:text-gray-100"></i>
+                        </figure>
+                        <h1 class="text-sm font-bold text-center">C</h1>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h1 class="text-4xl text-[#13faa9] font-Dosis text-start p-10"> <u>Communication Skills</u> </h1>
+
+
+            <div
+                class=" grid gap-x-20 gap-y-8 mx-auto justify-center items-center grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div class="flex flex-col items-center">
+                    <div class="radial-progress text-green-500 w-40 h-40 text-2xl font-bold" data-target="80"
+                        role="progressbar">0%</div>
+                    <p class="mt-2 text-center">Teamwork</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="radial-progress text-green-500 w-40 h-40 text-2xl font-bold" data-target="70"
+                        role="progressbar">0%</div>
+                    <p class="mt-2 text-center">Communication</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="radial-progress text-green-500 w-40 h-40 text-2xl font-bold" data-target="65"
+                        role="progressbar">0%</div>
+                    <p class="mt-2 text-center">Problem Solving</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="radial-progress text-green-500 w-40 h-40 text-2xl font-bold" data-target="90"
+                        role="progressbar">0%</div>
+                    <p class="mt-2 text-center">Leadership</p>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+
+    <!-- Project section  -->
+
+      <!-- Project section  -->
+
+      <section class="p-10 items-center mx-auto">
+
+        <h1 class="text-start font-Dosis text-[#13faa9] text-4xl p-10"> <u>Recent Project</u></h1>
+        <div class="flex justify-center mb-10">
+            <a href="./project.html" target="_blank"
+                class="btn btn-outline text-center btn-success hover:bg-green-100">
+                See All Project
+            </a>
+        </div>
+
+
+        <!--  one card  -->
+
+        <div
+            class="p-10 mx-auto justify-center gap-x-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+
+
+
+            <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
+                <a href="https://foysal777.github.io/car-reapir-fronted/" target="_blank" class="block">
+                    <!-- Wrap the card in an anchor tag to make the whole card clickable -->
+                    <div
+                        class="card card-compact bg-base-100 w-85 border-2 border-green-500 hover:border-white hover:shadow-green-200 shadow-md transition-all duration-300">
+                        <figure>
+                            <img class="p-2 rounded-2xl transform transition-transform duration-300 hover:scale-110"
+                                src="images/p-1.png" alt="Project Image" />
+                        </figure>
+                        <p class="text-xl font-Dosis text-center p-3">Car Repair Project</p>
+                    </div>
+                </a>
+
+                <!-- Buttons section -->
+                <div class="pt-4 flex gap-2 justify-between">
+                    <a href="https://github.com/foysal777/cloth-store-live-fronted" target="_blank"
+                        class="btn btn-outline btn-success hover:bg-green-100">
+                        github link
+                    </a>
+                    <a href="./p_1_details.html" target="_blank"
+                        class="btn btn-outline btn-success hover:bg-green-100">
+                        Details Project
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!-- ****************** -->
+
+
+            <!-- second card -->
+
+            <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
+                <a href="https://foysal777.github.io/cloth-store-live-fronted/" target="_blank" class="block">
+
+                    <div
+                        class="card card-compact bg-base-100 w-85 border-2 border-green-500 hover:border-white hover:shadow-green-200 shadow-md transition-all duration-300">
+                        <figure>
+                            <img class="p-2 rounded-2xl transform transition-transform duration-300 hover:scale-110"
+                                src="images/p1.png" alt="Project Image" />
+                        </figure>
+                        <p class="text-xl font-Dosis text-center p-3">Cloth Store Project</p>
+                    </div>
+                </a>
+
+                <!-- Buttons section -->
+                <div class="pt-4 flex gap-2 justify-between">
+                    <a href="https://github.com/foysal777/cloth-store-live-fronted" target="_blank"
+                        class="btn btn-outline btn-success hover:bg-green-100">
+                        github link
+                    </a>
+                    <a href="./p_2_details.html" target="_blank"
+                        class="btn btn-outline btn-success hover:bg-green-100">
+                        Details Project
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- 3rd  -->
+
+
+
+        </div>
+
+    </section>
+
+<!-- about me  -->
+    <!-- about me  -->
+
+    <section class="p-10">
+        <h1 class="text-4xl text-[#13faa9] font-Dosis text-start p-10"> <u>About me</u> </h1>
+        <div class="sm:flex items-center justify-evenly gap-10 p-10">
+
+            <div data-aos="flip-up" data-aos-duration="3000" data-aos-delay="800" class="img">
+
+                <img class="items-center w-2/4 sm:1/2 md:2/4 lg:2/4 rounded-lg" src="images/mee.png" alt="">
+            </div>
+            <div data-aos="zoom-in-up" data-aos-duration="1500">
+                <h1 class="text-4xl items-center pt-5">This is <span class="text-green-500">Foysal Hossain Munna
+                    </span></h1> <br>
+                <p class="text-2xl text-justify">
+                    I am Backend Django developer with expertise in building scalable web applications. Proficient
+                    in Python, Django,RESTful API ,DRF and database management.Passionate about clean code,
+                    optimization, and seamless user experiences. I am working this field three years .
+                </p> <br><br>
+
+                <div>
+
+                    <p class="text-2xl">Date of Birth : <span class="text-green-500"> 25 Aug 2001 </span></p>
+                    <p class="text-2xl">Country : <span class="text-green-500"> Bangladesh </span></p>
+                    <p class="text-2xl">Email: <span class="text-green-500">foysal.cse11@gmail.com </span></p>
+                    <p class="text-2xl">Contact: <span class="text-green-500"> +88 01743418894 </span></p>
+
+                </div>
+
+
+
+
+                <br><br>
+                <a href="./contact.html" class="btn btn-success rounded-lg text-lg font-bold"> Hired Me </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+ <!-- Education section  -->
+ <section class="p-10">
+    <h1 class="text-4xl text-[#13faa9] font-Dosis text-start p-10"> <u>Education</u> </h1>
+
+
+    <div class="p-10">
+
+        <div data-aos="flip-left" data-aos-duration="1200" data-aos-delay="500"
+            class="w-full  rounded-lg border-2 border-green-500 shadow-lg hover:border-white hover:shadow-green-200 p-4 transition-all duration-300">
+            <p class="mb-2 text-2xl font-bold">2020 - 2025</p>
+            <p class="text-4xl text-green-500">Computer Science and Enginnering</p>
+            <p class="text-xl text-white">National University , Dhaka City Collage </p>
+            <p class="text-green-500">Present </p>
+        </div>
+
+
+        <br><br>
+
+        <div data-aos="flip-right" data-aos-duration="1400" data-aos-delay="800"
+            class="w-full  rounded-lg border-2 border-green-500 shadow-lg hover:border-white hover:shadow-green-200 p-4 transition-all duration-300">
+            <p class="mb-2 text-2xl font-bold">2018 - 2020</p>
+            <p class="text-4xl text-green-500">Higher Secondary School Certificate</p>
+            <p class="text-xl text-white">Gazipur Science Collage , Gazipur City Corporation</p>
+            <p class="text-green-500">Passed </p>
+        </div>
+
+        <br><br>
+
+
+    </div>
+</section>
+
+
+         <!-- contact me  -->
+         <section class="p-10 overflow-x-hidden bg-black text-green-500">
+            <div class="items-center sm:flex justify-around gap-10">
+                <div class="p-10">
+                    <h1 class="text-4xl font-Dosis text-start pb-5 text-green-400"> Get in touch </h1>
+                    <div class="grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
+                        <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
+                            <label for="first-name" class="block text-sm font-medium text-green-500"></label>
+                            <input type="text" id="first-name" name="first-name" placeholder="First name"
+                                class="mt-1 block w-full p-3 border border-green-500 bg-black rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 focus:shadow-green-200">
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                            <label for="last-name" class="block text-sm font-medium text-green-500"></label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name"
+                                class="mt-1 block w-full p-3 border border-green-500 bg-black rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 focus:shadow-green-200">
+                        </div>
+                        <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+                            <label for="email" class="block text-sm font-medium text-green-500"></label>
+                            <input type="email" id="email" name="email" placeholder="Enter Email"
+                                class="mt-1 block w-full p-3 border border-green-500 bg-black rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 focus:shadow-green-200">
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                            <label for="phone-number" class="block text-sm font-medium text-green-500"></label>
+                            <input type="tel" id="phone-number" name="phone-number" placeholder="Number"
+                                class="mt-1 block w-full p-3 border border-green-500 bg-black rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 focus:shadow-green-200">
+                        </div>
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800" class="md:col-span-2">
+                            <label for="comments" class="block text-sm font-medium text-green-500">Write your message 🤗🌟</label>
+                            <textarea id="comments" name="comments" placeholder="Enter your text"
+                                class="mt-1 block w-full p-3 border border-green-500 bg-black rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 focus:shadow-green-200"
+                                rows="4"></textarea>
+                        </div>
+                        <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1200" class="md:col-span-2">
+                            <button id="submitButton" type="submit"
+                                class="mt-4 w-full p-3 bg-green-600 text-white font-medium rounded-md shadow-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:shadow-green-200">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pl-10 items-center justify-center sm:mx-auto">
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800" class="flex items-center">
+                        <div class="border border-green-500 rounded-lg p-2 text-2xl text-green-500 hover:bg-slate-100">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-medium">Email</p>
+                            <p class="text-green-400">foysal.cse11@gmail.com</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800" class="flex items-center">
+                        <div class="border border-green-500 p-2 text-2xl text-green-500 rounded-lg hover:bg-slate-100">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-medium">Phone</p>
+                            <p class="text-green-400">01743418894</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800" class="flex items-center">
+                        <div class="border border-green-500 p-3 text-2xl text-green-500 rounded-lg hover:bg-slate-100">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-medium">Address</p>
+                            <p class="text-green-400">Gazipur City Corporation , DUET 1700</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
+
+
+    <footer class="bg-green-600  p-5 text-black overflow-x-hidden">
+        <div class="text-center">
+            <p class="font-semibold text-2xl text-black">All Rights Reserved By <span id="current-year"></span></p>
+
+            <p class="mt-2 font-pacifico text-black hover:text-white"> ◅ Foysal Hossain Munna ▻</p>
+
+            <div class="flex mx-auto items-center justify-center gap-5 text-2xl p-3">
+
+                <a href="https://www.facebook.com/profile.php?id=100037662442075"> <i
+                    class="fa-brands fa-facebook hover:text-white"></i></a>
+                <a href="https://github.com/foysal777"> <i class="fa-brands fa-linkedin hover:text-white"></i></a>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"> <i class="fa-solid fa-envelope hover:text-white"></i> </a>
+
+            </div>
+
+        </div>
+    </footer>
 
 
 
@@ -162,6 +625,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./index.js"></script>
 </body>

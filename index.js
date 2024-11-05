@@ -42,6 +42,26 @@ document.getElementById("resumeButton").addEventListener("click", function() {
 
 
 
+// for soft skill 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const progressBars = document.querySelectorAll(".radial-progress");
+
+    progressBars.forEach(progressBar => {
+        const targetValue = parseInt(progressBar.getAttribute("data-target"));
+        let currentValue = 0;
+
+        const interval = setInterval(() => {
+            if (currentValue < targetValue) {
+                currentValue++;
+                progressBar.style.setProperty('--value', currentValue);
+                progressBar.textContent = `${currentValue}%`;
+            } else {
+                clearInterval(interval);
+            }
+        }, 200); // Adjust the speed of the animation here
+    });
+});
 
 
 
