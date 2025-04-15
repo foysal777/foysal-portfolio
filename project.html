@@ -8,14 +8,16 @@
     <title>Foysal_Hossain's_Portfolio </title>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-   <!-- dosis  -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Dosis:wght@200..800&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Unlock&display=swap" rel="stylesheet">
+    <!-- dosis  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Dosis:wght@200..800&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Unlock&display=swap"
+        rel="stylesheet">
     <!-- font awsome icon  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- AOS Animation (optional, only if you're using AOS) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- lobster font  -->
@@ -35,12 +37,13 @@
         font-weight: 400;
         font-style: normal;
     }
-    .dosis{
-  font-family: "Dosis", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+
+    .dosis {
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
 </style>
 
 <body class="bg-black dosis  text-white overflow-x-hidden">
@@ -66,7 +69,8 @@
                         id="user-dropdown">
                         <div class="px-4 py-3">
                             <span class="block text-sm text-gray-900 dark:text-white">Foysal Hossain</span>
-                            <span class="block text-sm text-gray-500 truncate dark:text-gray-400">foysal.cse11@gmail.com</span>
+                            <span
+                                class="block text-sm text-gray-500 truncate dark:text-gray-400">foysal.cse11@gmail.com</span>
                         </div>
                     </div>
                     <button data-collapse-toggle="navbar-user" type="button"
@@ -100,88 +104,139 @@
                 </div>
             </div>
         </nav>
-        
+
 
 
 
     </header>
 
     <!-- Main Content -->
-    <main >
-        
-             <!-- Project section  -->
+    <main>
 
-             <section class="p-10 items-center mx-auto">
-                <h1 class="text-center font-Dosis text-[#13faa9] text-4xl p-10">Recent Project</h1>
-                
-                <div class="flex justify-center mb-10">
-                    <a href="./project.html" target="_blank"
-                        class="btn btn-outline text-center btn-success hover:text-white  rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2">
-                        See All Project
+        <!-- Project section  -->
+
+        <section class="p-10 items-center mx-auto">
+            <h1 class="text-center font-Dosis text-[#13faa9] text-4xl p-10">Recent Project</h1>
+
+            <div class="flex justify-center mb-10">
+                <a href="./project.html" target="_blank"
+                    class="btn btn-outline text-center btn-success hover:text-white  rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2">
+                    See All Project
+                </a>
+            </div>
+
+            <!-- Project Cards -->
+            <div
+                class="p-10 mx-auto justify-center gap-x-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+               
+               
+               
+               <!-- Home service project start -->
+
+               <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
+                <a href="https://home-service-fronted.netlify.app/" target="_blank" class="block">
+                    <!-- Card Wrapper -->
+                    <div
+                        class="card bg-base-100 border border-[#13faa9] rounded-lg shadow-md transition-all duration-300 hover:shadow-green-200 w-full">
+                        <figure>
+                            <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110"
+                                src="images/home-service.png" alt="Project Image" />
+                        </figure>
+                        <p class="text-xl font-Dosis text-center p-3">RepairHurt Project</p>
+                    </div>
+                </a>
+
+                <!-- Buttons Section -->
+                <div class="pt-4 flex gap-2 justify-between">
+                    <a href="https://github.com/foysal777/Home-servicing-fronted" target="_blank"
+                        class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white">
+                        github link
+                    </a>
+                    <a href="./home-service-details.html" target="_blank"
+                        class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white ">
+                        Details Project
                     </a>
                 </div>
-            
-                <!-- Project Cards -->
-                <div class="p-10 mx-auto justify-center gap-x-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-                    <!-- First Card -->
-                    <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
-                        <a href="https://foysal777.github.io/car-reapir-fronted/" target="_blank" class="block">
-                            <!-- Card Wrapper -->
-                            <div class="card bg-base-100 border border-[#13faa9] rounded-lg shadow-md transition-all duration-300 hover:shadow-green-200 w-full">
-                                <figure>
-                                    <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110"
-                                        src="images/p-1.png" alt="Project Image" />
-                                </figure>
-                                <p class="text-xl font-Dosis text-center p-3">Car Repair Project</p>
-                            </div>
-                        </a>
-                        
-                        <!-- Buttons Section -->
-                        <div class="pt-4 flex gap-2 justify-between">
-                            <a href="https://github.com/foysal777/cloth-store-live-fronted" target="_blank"
-                                class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white">
-                                github link
-                            </a>
-                            <a href="./p_1_details.html" target="_blank"
-                                class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white ">
-                                Details Project
-                            </a>
+            </div>
+               <!-- Home service project end -->
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+                <!-- First Card -->
+                <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
+                    <a href="https://foysal777.github.io/car-reapir-fronted/" target="_blank" class="block">
+                        <!-- Card Wrapper -->
+                        <div
+                            class="card bg-base-100 border border-[#13faa9] rounded-lg shadow-md transition-all duration-300 hover:shadow-green-200 w-full">
+                            <figure>
+                                <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110"
+                                    src="images/p-1.png" alt="Project Image" />
+                            </figure>
+                            <p class="text-xl font-Dosis text-center p-3">Car Repair Project</p>
                         </div>
-                    </div>
-            
-                    <!-- Second Card -->
-                    <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
-                        <a href="https://foysal777.github.io/cloth-store-live-fronted/" target="_blank" class="block">
-                            <!-- Card Wrapper -->
-                            <div class="card bg-base-100 border border-[#13faa9] rounded-lg shadow-md transition-all duration-300 hover:shadow-green-200 w-full">
-                                <figure>
-                                    <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110"
-                                        src="images/p1.png" alt="Project Image" />
-                                </figure>
-                                <p class="text-xl font-Dosis text-center p-3">Cloth Store Project</p>
-                            </div>
+                    </a>
+
+                    <!-- Buttons Section -->
+                    <div class="pt-4 flex gap-2 justify-between">
+                        <a href="https://github.com/foysal777/cloth-store-live-fronted" target="_blank"
+                            class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white">
+                            github link
                         </a>
-                        
-                        <!-- Buttons Section -->
-                        <div class="pt-4 flex gap-2 justify-between">
-                            <a href="https://github.com/foysal777/cloth-store-live-fronted" target="_blank"
-                                class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white ">
-                                github link
-                            </a>
-                            <a href="./p_2_details.html" target="_blank"
-                                class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white ">
-                                Details Project
-                            </a>
-                        </div>
+                        <a href="./p_1_details.html" target="_blank"
+                            class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white ">
+                            Details Project
+                        </a>
                     </div>
                 </div>
-            </section>
-            
+
+                <!-- Second Card -->
+                <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
+                    <a href="https://foysal777.github.io/cloth-store-live-fronted/" target="_blank" class="block">
+                        <!-- Card Wrapper -->
+                        <div
+                            class="card bg-base-100 border border-[#13faa9] rounded-lg shadow-md transition-all duration-300 hover:shadow-green-200 w-full">
+                            <figure>
+                                <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110"
+                                    src="images/p1.png" alt="Project Image" />
+                            </figure>
+                            <p class="text-xl font-Dosis text-center p-3">Cloth Store Project</p>
+                        </div>
+                    </a>
+
+                    <!-- Buttons Section -->
+                    <div class="pt-4 flex gap-2 justify-between">
+                        <a href="https://github.com/foysal777/cloth-store-live-fronted" target="_blank"
+                            class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white ">
+                            github link
+                        </a>
+                        <a href="./p_2_details.html" target="_blank"
+                            class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white ">
+                            Details Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
 
- 
+
 
 
     <footer class="bg-green-600  p-5 text-black overflow-x-hidden">
@@ -193,9 +248,10 @@
             <div class="flex mx-auto items-center justify-center gap-5 text-2xl p-3">
 
                 <a href="https://www.facebook.com/profile.php?id=100037662442075"> <i
-                    class="fa-brands fa-facebook hover:text-white"></i></a>
+                        class="fa-brands fa-facebook hover:text-white"></i></a>
                 <a href="https://github.com/foysal777"> <i class="fa-brands fa-linkedin hover:text-white"></i></a>
-              <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"> <i class="fa-solid fa-envelope hover:text-white"></i> </a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"> <i
+                        class="fa-solid fa-envelope hover:text-white"></i> </a>
 
             </div>
 
