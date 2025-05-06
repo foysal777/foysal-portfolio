@@ -32,6 +32,44 @@
 
 
 <style>
+
+.cursor-wrapper {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+  }
+
+  .cursor-inner,
+  .cursor-outer {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .cursor-inner {
+    width: 18px;
+    height: 18px;
+    background-color: #13faa9;
+    transition: background-color 0.6s ease;
+  }
+
+  .cursor-outer {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #0b9a68;
+    background: transparent;
+    transition: border-color 0.6s ease;
+  }
+
+
+
+
+
+  /* ********************************* */
     .lobster-regular {
         font-family: "Lobster", sans-serif;
         font-weight: 400;
@@ -159,20 +197,7 @@
                 </div>
             </div>
                <!-- Home service project end -->
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
-               
+        
                
                
                
@@ -263,6 +288,37 @@
 
     <script>
         AOS.init();
+
+        // ***************************
+        const wrapper = document.createElement('div');
+  wrapper.className = 'cursor-wrapper';
+
+  const inner = document.createElement('div');
+  inner.className = 'cursor-inner';
+
+  const outer = document.createElement('div');
+  outer.className = 'cursor-outer';
+
+  wrapper.appendChild(outer);
+  wrapper.appendChild(inner);
+  document.body.appendChild(wrapper);
+
+  const colors = ['#13faa9' ,'#f213fa' ,'#b1fa13','#13b5fa'];  let index = 0;
+
+  document.addEventListener('mousemove', (e) => {
+    wrapper.style.left = e.clientX + 'px';
+    wrapper.style.top = e.clientY + 'px';
+  });
+
+  setInterval(() => {
+    index = (index + 1) % colors.length;
+    inner.style.backgroundColor = colors[index];
+    outer.style.borderColor = colors[index];
+  }, 2000);
+
+
+
+
     </script>
 
     <script src="contact.js"></script>

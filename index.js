@@ -111,3 +111,31 @@ document.getElementById("submitButton").addEventListener("click", async (e) => {
 
 // for typing animation 
 
+const wrapper = document.createElement('div');
+wrapper.className = 'cursor-wrapper';
+
+const inner = document.createElement('div');
+inner.className = 'cursor-inner';
+
+const outer = document.createElement('div');
+outer.className = 'cursor-outer';
+
+wrapper.appendChild(outer);
+wrapper.appendChild(inner);
+document.body.appendChild(wrapper);
+
+const colors = ['#13faa9' ,'#f213fa' ,'#b1fa13','#13b5fa'];
+let index = 0;
+
+document.addEventListener('mousemove', (e) => {
+  wrapper.style.left = e.clientX + 'px';
+  wrapper.style.top = e.clientY + 'px';
+});
+
+setInterval(() => {
+  index = (index + 1) % colors.length;
+  inner.style.backgroundColor = colors[index];
+  outer.style.borderColor = colors[index];
+}, 2000);
+
+

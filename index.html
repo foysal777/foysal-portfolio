@@ -48,6 +48,46 @@
 
 
 <style>
+
+
+.cursor-wrapper {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+  }
+
+  .cursor-inner,
+  .cursor-outer {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .cursor-inner {
+    width: 18px;
+    height: 18px;
+    background-color: #13faa9;
+    transition: background-color 0.6s ease;
+  }
+
+  .cursor-outer {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #13faa9;
+    background: transparent;
+    transition: border-color 0.6s ease;
+  }
+
+
+
+
+
+
+
     .dosis {
         font-family: "Dosis", sans-serif;
         font-optical-sizing: auto;
