@@ -32,44 +32,43 @@
 
 
 <style>
+    .cursor-wrapper {
+        position: fixed;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: difference;
+    }
 
-.cursor-wrapper {
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    mix-blend-mode: difference;
-  }
+    .cursor-inner,
+    .cursor-outer {
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-  .cursor-inner,
-  .cursor-outer {
-    position: absolute;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+    .cursor-inner {
+        width: 18px;
+        height: 18px;
+        background-color: #13faa9;
+        transition: background-color 0.6s ease;
+    }
 
-  .cursor-inner {
-    width: 18px;
-    height: 18px;
-    background-color: #13faa9;
-    transition: background-color 0.6s ease;
-  }
-
-  .cursor-outer {
-    width: 36px;
-    height: 36px;
-    border: 2px solid #0b9a68;
-    background: transparent;
-    transition: border-color 0.6s ease;
-  }
-
+    .cursor-outer {
+        width: 36px;
+        height: 36px;
+        border: 2px solid #0b9a68;
+        background: transparent;
+        transition: border-color 0.6s ease;
+    }
 
 
 
 
-  /* ********************************* */
+
+    /* ********************************* */
     .lobster-regular {
         font-family: "Lobster", sans-serif;
         font-weight: 400;
@@ -154,101 +153,99 @@
         <!-- Project section  -->
 
         <section class="p-10 items-center mx-auto">
-            <div class = "pt-8"> </div>
+            <div class="pt-8"></div>
 
             <!-- Project Cards -->
             <div
                 class="p-10 mx-auto justify-center gap-x-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-               
-               
-               
-               <!-- Home service project start -->
 
-               <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
-                <a href="https://home-service-fronted.netlify.app/" target="_blank" class="block">
-                    <!-- Card Wrapper -->
-                    <div
-                        class="card bg-base-100 border border-[#13faa9] rounded-lg shadow-md transition-all duration-300 hover:shadow-green-200 w-full">
-                        <figure>
-                            <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110"
-                                src="images/home-service.png" alt="Project Image" />
-                        </figure>
-                        <p class="text-xl font-Dosis text-center p-3">RepairHurt Project</p>
-                    </div>
-                </a>
-
-                <!-- Buttons Section -->
-                <div class="pt-4 flex gap-2 justify-between">
-                    <a href="https://github.com/foysal777/Home-servicing-fronted" target="_blank"
-                        class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white">
-                        github link
-                    </a>
-                    <a href="./home-service-details.html" target="_blank"
-                        class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white ">
-                        Details Project
-                    </a>
-                </div>
-            </div>
-               <!-- Home service project end -->
-        
-               
-               
-               
-                <!-- First Card -->
+                <!-- Home service project start -->
                 <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
-                    <a href="https://foysal777.github.io/car-reapir-fronted/" target="_blank" class="block">
-                        <!-- Card Wrapper -->
+                    <a href="https://home-service-fronted.netlify.app/" target="_blank" class="block">
                         <div
                             class="card bg-base-100 border border-[#13faa9] rounded-lg shadow-md transition-all duration-300 hover:shadow-green-200 w-full">
-                            <figure>
-                                <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110"
+                            <div class="relative">
+                                <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110 w-full"
+                                    src="images/home-service.png" alt="Project Image" />
+                                <div
+                                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 text-green-400 text-lg font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                                    Click to live project
+                                </div>
+                            </div>
+                            <p class="text-xl font-Dosis text-center p-3">RepairHurt Project</p>
+                        </div>
+                    </a>
+                    <div class="pt-4 flex gap-2 justify-between">
+                        <a href="https://github.com/foysal777/Home-servicing-fronted" target="_blank"
+                            class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white">
+                            github link
+                        </a>
+                        <a href="./home-service-details.html" target="_blank"
+                            class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white">
+                            Details Project
+                        </a>
+                    </div>
+                </div>
+                <!-- Home service project end -->
+
+                <!-- Car Repair Project -->
+                <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
+                    <a href="https://foysal777.github.io/car-reapir-fronted/" target="_blank" class="block">
+                        <div
+                            class="card bg-base-100 border border-[#13faa9] rounded-lg shadow-md transition-all duration-300 hover:shadow-green-200 w-full">
+                            <div class="relative">
+                                <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110 w-full"
                                     src="images/p-1.png" alt="Project Image" />
-                            </figure>
+                                <div
+                                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 text-green-400 text-lg font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                                    Click to live project
+                                </div>
+                            </div>
                             <p class="text-xl font-Dosis text-center p-3">Car Repair Project</p>
                         </div>
                     </a>
-
-                    <!-- Buttons Section -->
                     <div class="pt-4 flex gap-2 justify-between">
                         <a href="https://github.com/foysal777/cloth-store-live-fronted" target="_blank"
                             class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white">
                             github link
                         </a>
                         <a href="./p_1_details.html" target="_blank"
-                            class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white ">
+                            class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white">
                             Details Project
                         </a>
                     </div>
                 </div>
 
-                <!-- Second Card -->
+                <!-- Cloth Store Project -->
                 <div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="400" class="pb-4 items-center mx-auto">
                     <a href="https://foysal777.github.io/cloth-store-live-fronted/" target="_blank" class="block">
-                        <!-- Card Wrapper -->
                         <div
                             class="card bg-base-100 border border-[#13faa9] rounded-lg shadow-md transition-all duration-300 hover:shadow-green-200 w-full">
-                            <figure>
-                                <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110"
+                            <div class="relative">
+                                <img class="p-2 rounded-lg transform transition-transform duration-300 hover:scale-110 w-full"
                                     src="images/p1.png" alt="Project Image" />
-                            </figure>
+                                <div
+                                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 text-green-400 text-lg font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                                    Click to live project
+                                </div>
+                            </div>
                             <p class="text-xl font-Dosis text-center p-3">Cloth Store Project</p>
                         </div>
                     </a>
-
-                    <!-- Buttons Section -->
                     <div class="pt-4 flex gap-2 justify-between">
                         <a href="https://github.com/foysal777/cloth-store-live-fronted" target="_blank"
-                            class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white ">
+                            class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white">
                             github link
                         </a>
                         <a href="./p_2_details.html" target="_blank"
-                            class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white ">
+                            class="btn btn-outline rounded-full border border-[#13faa9] text-[#13faa9] px-4 py-2 hover:text-white">
                             Details Project
                         </a>
                     </div>
                 </div>
             </div>
         </section>
+
 
 
     </main>
@@ -284,30 +281,30 @@
 
         // ***************************
         const wrapper = document.createElement('div');
-  wrapper.className = 'cursor-wrapper';
+        wrapper.className = 'cursor-wrapper';
 
-  const inner = document.createElement('div');
-  inner.className = 'cursor-inner';
+        const inner = document.createElement('div');
+        inner.className = 'cursor-inner';
 
-  const outer = document.createElement('div');
-  outer.className = 'cursor-outer';
+        const outer = document.createElement('div');
+        outer.className = 'cursor-outer';
 
-  wrapper.appendChild(outer);
-  wrapper.appendChild(inner);
-  document.body.appendChild(wrapper);
+        wrapper.appendChild(outer);
+        wrapper.appendChild(inner);
+        document.body.appendChild(wrapper);
 
-  const colors = ['#13faa9' ,'#f213fa' ,'#b1fa13','#13b5fa'];  let index = 0;
+        const colors = ['#13faa9', '#f213fa', '#b1fa13', '#13b5fa']; let index = 0;
 
-  document.addEventListener('mousemove', (e) => {
-    wrapper.style.left = e.clientX + 'px';
-    wrapper.style.top = e.clientY + 'px';
-  });
+        document.addEventListener('mousemove', (e) => {
+            wrapper.style.left = e.clientX + 'px';
+            wrapper.style.top = e.clientY + 'px';
+        });
 
-  setInterval(() => {
-    index = (index + 1) % colors.length;
-    inner.style.backgroundColor = colors[index];
-    outer.style.borderColor = colors[index];
-  }, 2000);
+        setInterval(() => {
+            index = (index + 1) % colors.length;
+            inner.style.backgroundColor = colors[index];
+            outer.style.borderColor = colors[index];
+        }, 2000);
 
 
 
